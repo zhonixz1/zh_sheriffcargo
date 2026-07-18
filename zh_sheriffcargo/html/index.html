@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cargo Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="app" class="app hidden">
+        <section class="panel">
+            <header class="panel-header">
+                <div>
+                    <h1 id="title">Cargo Setup</h1>
+                    <p id="subtitle">Choose the route and box contents</p>
+                </div>
+            </header>
+
+            <div class="route-row">
+                <label for="routeSelect">Routes</label>
+                <select id="routeSelect"></select>
+            </div>
+
+            <div class="content-grid">
+                <section class="column">
+                    <div class="column-title">
+                        <h2>Available Items</h2>
+                        <span id="marketCount">0 items</span>
+                    </div>
+                    <div id="marketList" class="item-list"></div>
+                </section>
+
+                <section class="column selected-column">
+                    <div class="column-title">
+                        <h2>Cargo Chest</h2>
+                        <span id="totalCount">0 / 0</span>
+                    </div>
+                    <div id="selectedList" class="item-list"></div>
+                </section>
+            </div>
+
+            <footer class="actions">
+                <button id="cancelBtn" class="secondary-button" type="button">Close</button>
+                <button id="startBtn" class="primary-button" type="button">Start</button>
+            </footer>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
